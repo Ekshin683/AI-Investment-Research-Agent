@@ -1,0 +1,36 @@
+{
+  "name": "ai-investment-research-agent",
+  "version": "1.0.0",
+  "description": "AI investment research and future outlook platform",
+  "main": "Backend/server.js",
+  "scripts": {
+    "start": "node Backend/server.js",
+    "dev:server": "nodemon Backend/server.js",
+    "dev:client": "npm --prefix Frontend run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "npm --prefix Frontend run build",
+    "test": "node -e \"console.log('No automated tests are configured yet.')\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ekshin683/AI-Investment-Research-Agent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ekshin683/AI-Investment-Research-Agent/issues"
+  },
+  "homepage": "https://github.com/Ekshin683/AI-Investment-Research-Agent#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.7.2",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
